@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import RefExample from "./RefExample";
 
 function App() {
   let variable = 0;
@@ -15,6 +16,9 @@ function App() {
 
   return (
     <div>
+      <h2>Exemplo de useRef com o DOM</h2>
+      <RefExample />
+      <hr />
       <h2>Conhecendo o useRef</h2>
       <p>Variável: {variable}</p>
       <p>Ref: {ref.current}</p>
